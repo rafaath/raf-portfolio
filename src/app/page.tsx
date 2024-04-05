@@ -7,7 +7,7 @@ export default function Home() {
       {/* Navigation at the top */}
       <div className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-md z-10">
         <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-          <a href="#" className="text-lg font-semibold text-gray-800 dark:text-white">Raf's Portfolio</a>
+          <a href="#" className="text-lg font-semibold text-gray-800 dark:text-white">Rafs Portfolio</a>
           <div className="flex items-center">
             <a href="#about" className="text-gray-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
             <a href="#projects" className="text-gray-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
@@ -21,8 +21,8 @@ export default function Home() {
       <div className="container mx-auto my-12 px-6">
   {/* Hero Section - Introduction about yourself */}
   <header className="text-center py-10">
-    <h1 className="text-4xl font-bold dark:text-white">Hello, I'm Raf</h1>
-    <p className="text-xl text-gray-600 dark:text-gray-300 mt-4">A Developer's Portfolio</p>
+    <h1 className="text-4xl font-bold dark:text-white">Hello, Im Raf</h1>
+    <p className="text-xl text-gray-600 dark:text-gray-300 mt-4">A Developers Portfolio</p>
   </header>
 
   {/* Portfolio Projects Section */}
