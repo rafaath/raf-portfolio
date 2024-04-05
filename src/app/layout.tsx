@@ -1,19 +1,20 @@
 // layout.tsx
 
-import React from 'react';
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
+// Define LayoutProps type properly
 type LayoutProps = {
   children: React.ReactNode;
   title?: string;
   description?: string;
 };
 
-export default function RootLayout({ children, title, description }: LayoutProps) {
+// Ensure correct usage of LayoutProps and proper default export of RootLayout function
+const RootLayout: React.FC<LayoutProps> = ({ children, title, description }) => {
   return (
     <>
       <Head>
@@ -21,9 +22,11 @@ export default function RootLayout({ children, title, description }: LayoutProps
         <meta name="description" content={description || 'Welcome to my portfolio'} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
+      <body className={inter.className}>
+        {children}
+      </body>
     </>
   );
-}
+};
+
+export default RootLayout;
